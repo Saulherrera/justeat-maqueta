@@ -1,0 +1,253 @@
+/* - Font - */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto/Roboto-Regular.eot");
+    src: local(Roboto-Regular), local(Roboto-Regular), url("../font/Roboto/Roboto-Regular.woff") format("woff"), url("../font/Roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../font/Roboto/Roboto-Bold.eot");
+    src: local(Roboto-Bold), local(Roboto-Bold), url("../font/Roboto/Roboto-Bold.woff") format("woff"), url("../font/Roboto/Roboto-Bold.svg#Roboto-Bold") format("svg");
+}
+
+/*General*/
+body {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+}
+
+/*reset page*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/*min-max width page*/
+.page header,
+.page main,
+.page footer {
+    min-width: 320px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* border space - content*/
+.page .medium,
+.page .mediumtext,
+.page .step1,
+.page .step2,
+.page .step3,
+footer {
+    padding: 0 20px;
+}
+
+/*general button*/
+button.btn_blue {
+    background-color: #00a0e0;
+    padding: 11px;
+    color: #fff;
+    font-size: 1.3em;
+    max-width: 220px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/*reestablecer flujo*/
+.clear{
+    clear: both;
+}
+
+/*Especificos*/
+.page header {
+    text-align: center;
+}
+
+.page header img {
+    max-width: 180px;
+    width: 100%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.page main img.slider {
+    width: 100%;
+}
+
+.page main p {
+    font-size: 20px;
+}
+
+.page main {
+    text-align: center;
+}
+
+.page .medium {
+    margin-top: 17px;
+}
+
+.page main .medium p {
+    font-size: 1.094rem;
+    margin: 0;
+}
+
+.page main .medium h2 {
+    font-size: 1.47rem;
+    /*font-family: "Roboto-Bold";*/
+    margin: 3px 0 9px 0;
+}
+
+.page main .medium img {
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.page main .mediumtext h4 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+
+.page main .mediumtext p {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.page .step1,
+.page .step2,
+.page .step3 {
+    background-color: #f7f1f1;
+    padding: 20px 0;
+    margin: 50px 0 15px 0;
+}
+
+.page .step1 span,
+.page .step2 span,
+.page .step3 span {
+    background: #00a0e0;
+    color: #fff;
+    font-size: 30px;
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    margin: -50px auto 15px auto;
+    padding: 9px
+}
+
+.page .step1 p,
+.page .step2 p,
+.page .step3 p {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 1.30em;
+}
+
+.page .step1 h3,
+.page .step2 h3,
+.page .step3 h3 {
+    margin: 0px;
+    color: #00a0e0;
+    font-size: 1.15rem;
+}
+
+.page main .step1 {
+    margin-bottom: 80px;
+}
+
+.page main .step3 {
+    margin-bottom: 15px;
+}
+
+.page .step1 p {
+    margin-bottom: 10px;
+}
+
+.page main .step1 img {
+    height: 40px;
+    min-width: 125px;
+    margin-bottom: -42px;
+}
+
+@media only screen and (min-width: 480px) {
+    .page main .step1 img {
+        height: 50px;
+    }
+}
+
+.page footer {
+    color: #8c8c8c;
+    font-size: 11px;
+}
+
+.page footer p {
+    text-align: center;
+}
+
+.page footer p span {
+    display: inline-block;
+}
+
+.page footer div {
+    border-top: 1px #8c8c8c solid;
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.page footer div span {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.page footer div img {
+    display: table-cell;
+    width: 70%;
+    max-width: 115px;
+}
+
+@media only screen and (min-width: 768px) {
+    .page main .step1 img {
+        display: none;
+    }
+
+    .page main .steps{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .page main .step1,
+    .page main .step2,
+    .page main .step3 {
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 40px;
+    }
+
+    .page main .step2{
+        margin-left: 39px;
+    }
+    .page main .step3 {
+        float: right;
+    }
+
+}
+
+/*
+320
+480
+768
+992
+1200
+*/
